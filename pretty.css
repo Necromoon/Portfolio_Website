@@ -171,6 +171,10 @@ strong {
 /WORK / STUDIES SECTION
 */
 
+.work-title {
+    margin-top: 100px;
+}
+
 .work-list {
     margin-left: 181px;
     margin-right: 181px;
@@ -200,6 +204,7 @@ strong {
     height: auto; 
     margin-left: 181px;
     margin-top: 100px;
+    margin-bottom: 100px;
     border: solid;
     opacity: 0;
     transform: translateY(50px);
@@ -224,6 +229,35 @@ strong {
    line-height: 1.4;
 
 }
+
+.section-resume {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section-resume-display {
+    display: flex;
+    flex-direction: column;
+    margin-right: 181px;
+}
+
+.section-resume-title {
+    font-size: 28px;
+    margin-left: 176px;
+    margin-right: 181px;
+}
+
+.section-resume-text {
+    border-bottom: 1px solid black;
+    margin: 60px 181px 60px 181px;
+    text-decoration: none;
+}
+
+.section-resume-text:hover {
+    transform: scale(1.01);
+    font-weight: 700;
+    color: #DC3131;
+}  
 
 /*
 /STACKS SECTION
@@ -377,8 +411,12 @@ footer > a {
         margin-left: 100px;
     }
 
-    .work-list, .stack-list {
+    .work-list, .stack-list, .section-resume-title, .section-resume-text {
         margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .section-resume-display {
         margin-right: 80px;
     }
   }
@@ -416,15 +454,14 @@ footer > a {
     img {
         width: 40px;
     }
-
-    .work-list, .stack-list {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
   }  
 
 
   @media only screen and (max-width: 576px) {
+    .section, .section-about{
+        font-size: 34px;
+    }
+
     p  {
         margin-left: 60px;
         margin-right: 60px;
@@ -434,15 +471,14 @@ footer > a {
         margin-left: 60px;
     }
 
-    .work-list, .stack-list {
+    .work-list, .stack-list, .section-resume-title, .section-resume-text {
         margin-left: 40px;
         margin-right: 40px;
     }
 
-    .section, .section-about{
-        font-size: 34px;
+     .section-resume-display {
+        margin-right: 40px;
     }
-
   }  
 
 /*
